@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Encriptador</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="./img/Logo.png" alt="Logo Alura">
+  </header>
+
+  <section class="container">
+
+    <!--container input-->
+    <div class="entrada">
+      <div class="textInput">
+        <textarea class="textInput__input" placeholder="Ingrese el texto aquí"></textarea>
+        <div class="boton-borrar">
+          <input type="button" value="X" id="botonBorrar" onclick="borrarTextoIngreso()">
+      </div>
+      </div>
+      
+      
+      <p class="entrada__texto"> <i class="fa-sharp fa-solid fa-circle-exclamation"></i>  Solo letras minúsculas y sin acentos</p>
+      <div class="buttons">
+        <button class="buttons__encriptar" onclick="encrypt()">Encriptar</button>
+        <button class="buttons__desencriptar" onclick="decrypt()">Desencriptar</button>
+      </div>
+      
+
+    </div>
+
+    <!--container resultado-->
+    <div class="cajaTextoResultado" id="cajaTextoResultado">
+      <textarea class="cajaTexto2" id="cajaTexto2" readonly></textarea>
+      <img id="muñeco" class="muneco" src="./img/Muñeco.png" alt="muñeco">
+     
+      <p id="textoIndicativo"> <span class="title">Ningún mensaje fue encontrado</span> <br> <span class="subtitle">Ingresa el texto que deseas encriptar o desencriptar</span></p>
+    
+      <div class="copy-button" id="botones2">
+        <button id="botonCopiar" onclick="copiarTexto()" class="copy-button__button">Copiar</button>
+      </div>
+    </div>
+  </section>
+  <footer>
+      <div class="col-12">
+        <h4 class="copy">Copyright &copy; 2022  -  Página creada por Janet Santi - <a href="https://github.com/janeta-k"><i class="fa-brands fa-github"></i></a></h4>
+      </div>
+    </footer>
+
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/ee19aaa67d.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
