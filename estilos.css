@@ -29,6 +29,8 @@ body {
 .textInput__input {
   font-size: 32px;
   margin-left: 20px;
+  width: 84%;
+  height: 100%;
   background-color: #e5e5e5;
   border: none;
   resize: none;
